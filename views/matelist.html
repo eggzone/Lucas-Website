@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mateslist</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <header>
+        <div class='biaoti'>
+            <span class="biaoti">
+                这是标题栏
+            </span>
+        </div>
+        <nav>导航栏</nav>
+    </header>
+    <section>
+        <div id="mateslist">
+            <table id="mateslist">
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th colspan="2">编辑</th>
+                    </tr>
+                {{ each user }}
+                <tr>
+                    <td>{{ $value.id }}</td>
+                    <td>{{ $value.name }}</td>
+                    <td>{{ $value.gender }}</td>
+                    <td><a href="/classmates/edit/{{ $value.id }}">修改</a></td>
+                    <td><a href="/classmates/delete/{{ $value.id }}">删除</a></td>
+                </tr>
+                {{ /each }}
+            </table>
+        </div>
+    </section>
+    <footer>
+        <a href="/classmates/addUser">新增</a>
+        <a href="/">返回首页</a>
+    </footer>
+        
+</body>
+</html>

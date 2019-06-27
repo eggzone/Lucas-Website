@@ -1,0 +1,5 @@
+classmates
+1. get获得所有人的列表 listUsers
+2. post增加人员 addUser
+3. get删除特定人员 deletUser
+4. 获得特定人员详细信息 :id
