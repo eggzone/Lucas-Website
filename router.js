@@ -8,6 +8,11 @@ router.get('/', function(req, res) {
     res.render('./index.html')
 })
 
+//时钟
+router.get('/clock', function(req, res) {
+    res.render('./clock.html')
+})
+
 //班级同学主页
 router.get('/classmates', function(req, res) {
     res.redirect('/classmates/listUsers')
@@ -41,6 +46,11 @@ router.post('/classmates/addUser', function (req, res) {
 router.get('/classmates/delete/:id', function(req, res) {
     classmates.delete(req.params.id)
     res.redirect('/classmates/listUsers')
+})
+
+//test
+router.get('/test', function(req, res) {
+    res.render('./webtest.html')
 })
 
 //导出模块

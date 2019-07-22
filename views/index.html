@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="/static/css/main.css">
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/move.js"></script>
+    <style>
+        #swim>img {
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class='biaoti'>
-            <span class="biaoti">
-                这是标题栏
-            </span>
+        <div>
+            <div id="logo"><img src="/static/img/sheep_logo.png" width="100px" alt="logo"></div>
+            <div id="title">Lucas's Home</div>
         </div>
         <nav>
             <ul>
@@ -22,16 +28,33 @@
                 <li>
                     <a href="/age">我今天几岁了呀？</a>
                 </li>
+                <li>
+                    <a href="/clock">Time</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section>
+        正文部分
 
+        <p>
+            一些便捷网址：
+            <a href="http://www.ip138.com/" target="_blank" rel="noopener noreferrer">查询IP地址</a>
+            <a href="/test" target="_blank" rel="noopener noreferrer">CSS测试</a>
+            <a href="https://www.runoob.com" target="_blank" rel="noopener noreferrer">菜鸟教程</a>
+        </p>
+        <div id="swim">
+            <img src="/static/img/未标题-1.png" alt="swim">
+        </div>
     </section>
 
     <footer>
-
+        <p>版权所有 仿冒必究<br>Copyright@youngxy</p>
     </footer>
+
+    <div id="ad">
+        我是广告
+    </div>
 </body>
 </html>
